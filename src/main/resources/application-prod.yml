@@ -1,0 +1,13 @@
+spring:
+  jpa:
+    show-sql: false
+
+logging:
+  level:
+    root: WARN
+    com.examforge: INFO
+
+management:
+  endpoint:
+    health:
+      show-details: never

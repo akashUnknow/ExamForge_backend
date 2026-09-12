@@ -1,0 +1,13 @@
+spring:
+  jpa:
+    show-sql: true
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    com.examforge: DEBUG
+
+management:
+  endpoint:
+    health:
+      show-details: always
