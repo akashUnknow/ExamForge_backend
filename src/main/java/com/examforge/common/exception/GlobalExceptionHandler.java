@@ -93,12 +93,12 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ApiResponse.error(message));
     }
 
-    // ---- 404 on unknown route ----
-    @ExceptionHandler(NoResourceFoundException.class)
-    public ResponseEntity<ApiResponse<Object>> handleNoResourceFound(NoResourceFoundException ex) {
-        return ResponseEntity.status(HttpStatus.NOT_FOUND)
-                .body(ApiResponse.error("Resource not found"));
-    }
+//    // ---- 404 on unknown route ----
+//    @ExceptionHandler(NoResourceFoundException.class)
+//    public ResponseEntity<ApiResponse<Object>> handleNoResourceFound(NoResourceFoundException ex) {
+//        return ResponseEntity.status(HttpStatus.NOT_FOUND)
+//                .body(ApiResponse.error("Resource not found"));
+//    }
 
     // ---- Wrong HTTP method ----
     @Override
